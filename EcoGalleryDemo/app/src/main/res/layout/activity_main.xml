@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="40dp">
+
+    <us.feras.ecogallery.EcoGallery
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="#e0e0e0"
+        app:unselectedAlpha="0.2"
+        app:selectedScale="1.2" />
+
+</LinearLayout>
