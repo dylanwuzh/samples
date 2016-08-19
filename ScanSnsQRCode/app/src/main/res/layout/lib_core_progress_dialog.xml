@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <LinearLayout
+        android:id="@+id/lay_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_holo_light"
+        android:gravity="center"
+        android:minHeight="@dimen/dp64"
+        android:minWidth="@dimen/dp150"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16">
+
+        <com.kokozu.widget.ProgressBar
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            app:pb_shape="oval"
+            app:pb_strokeColor="#008cff"
+            app:pb_strokeWidth="2dp" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:maxLines="2"
+            android:text="请稍候..."
+            android:textColor="#323232"
+            android:textSize="16sp"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>
